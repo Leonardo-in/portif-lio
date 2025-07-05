@@ -1,0 +1,110 @@
+/* === GERAL ============================================================ */
+html {
+    scroll-behavior: smooth;           /* rolagem suave para #âncoras   */
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #121212;               /* fundo escuro principal        */
+    color: #e0e0e0;                    /* texto claro                   */
+}
+
+/* === CABEÇALHO ======================================================== */
+header {
+    text-align: center;
+    background: #1f1f1f;               /* faixa um pouco mais clara     */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #00d4ff;                    /* azul‑neon para destaque       */
+}
+
+/* === MENU ============================================================= */
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #00d4ff;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* === SEÇÕES =========================================================== */
+section {
+    background: #1e1e1e;               /* bloco escuro médio            */
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+section h2,
+section h3 {
+    color: #00d4ff;                    /* títulos azul‑neon             */
+    margin-top: 0;
+}
+
+/* === IMAGENS ========================================================== */
+img {
+    max-width: 200px;                  /* nunca passa de 200 px         */
+    border-radius: 8px;
+    margin: 10px 10px 10px 0;
+}
+
+/* === FORMULÁRIO ======================================================= */
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background: #2c2c2c;
+    color: #e0e0e0;
+}
+
+input[type="submit"] {
+    background: #00d4ff;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #00aacc;
+}
+
+/* === BOTÃO “HOME” FIXO ================================================ */
+#homeBtn {                             /* exige <a id="homeBtn" href="#topo">↑</a> no HTML */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #00d4ff;
+    color: #000;
+    padding: 10px 14px;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.4);
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+}
+
+#homeBtn:hover {
+    opacity: 1;
+}
+
+
