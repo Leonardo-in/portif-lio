@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Portfólio Pessoal</title>
+  <link rel="stylesheet" href="CSS/pagina_inicial.css">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      display: flex;          /* transforma o body num flex‑container   */
+      flex-direction: column; /* empilha os filhos verticalmente        */
+      align-items: center;    /* centraliza tudo no eixo horizontal     */
+    } 
+
+    header, section {
+    width: 100%;            /* ocupa toda a largura disponível        */
+    max-width: 900px;       /* ...mas não passa de 900 px             */
+}
+
+    nav a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: blue;
+    }
+
+    section {
+      margin-top: 50px;
+    }
+
+    #homeBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: black;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 14px;
+      opacity: 0.7;
+    }
+
+    #homeBtn:hover {
+      opacity: 1;
+    }
+
+    img {
+      max-width: 200px;
+      margin: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- TOPO -->
+  <header id="topo">
+    <h1>Portfólio Pessoal</h1>
+    <nav>
+      <a href="#pessoal">Pessoal</a>
+      <a href="#formacao">Formação</a>
+      <a href="#portifolio">Portfólio</a>
+      <a href="#contato">Contato</a>
+          <p>Estudante para Analista de Sistemas</p>
+    <img src="img-leo.jpg" alt="Leonardo Inacio">
+    </nav>
+  </header>
+
+  <!-- SEÇÕES -->
+  <section id="pessoal">
+    <h2>Dados Pessoais</h2>
+    <p>Nome: Leonardo Inacio</p>
+    <p>Idade: 27 anos</p>
+    <p>Natural de São José do Rio Preto - SP</p>
+    <p>Resido em Medianeira - PR</p>
+  </section>
+
+  <section id="formacao">
+    <h2>Formação</h2>
+    <p>Ensino Médio completo (Uninter - PR)</p>
+    <p>Informática Básica (Expert Cursos)</p>
+    <p>Cursando Análise e Desenvolvimento de Sistemas (Uninter - PR)</p>
+  </section>
+
+  <section id="portifolio">
+    <h2>Experiência</h2>
+    <h3>Cabeamento e Fibra Óptica</h3>
+    <img src="rack.jpg" alt="Rack">
+    <img src="infra.jpg" alt="Infraestrutura">
+    <img src="DIO.jpg" alt="DIO">
+    <p>5 anos de experiência com cabeamento, montagem de rack, infraestrutura e fusão de fibra óptica.</p>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <form>
+      <p><input type="text" name="nome" placeholder="Nome"></p>
+      <p><input type="email" name="email" placeholder="E-mail"></p>
+      <p><textarea name="mensagem" rows="4" cols="30" placeholder="Comentário"></textarea></p>
+      <p><input type="submit" value="Enviar"></p>
+    </form>
+  </section>
+
+  <!-- BOTÃO HOME -->
+  <a href="#topo" id="homeBtn">Home ↑</a>
+</body>
+</html>
+
